@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+{% block title %}Contact - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+    <br>
+    <div id="information-contact" class="container">
+        <ul class="breadcrumb">
+            <li><a href="{% url 'index' %}"><i class="fa fa-home"></i></a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+        <div class="row">
+            <div id="content" class="col-sm-12">
+                <h1>Contact Us</h1>
+                <h3>Our Location</h3>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-3"><img src="{% static "image/cache/catalog/lmtoerner-268x50.jpg" %}"
+                                                       alt="L.M.Toerner, LLC" title="L.M.Toerner, LLC"
+                                                       class="img-thumbnail"></div>
+                            <div class="col-sm-3"><strong>L.M.Toerner, LLC</strong><br>
+                                <address>
+                                    337 Wisconsin Ave<br>
+                                    Oak Park, IL 60302
+                                </address>
+                                <a href="https://maps.google.com/maps?q=United%20States&amp;hl=en-gb&amp;t=m&amp;z=15"
+                                   target="_blank" class="btn btn-info"><i class="fa fa-map-marker"></i> View Google Map</a>
+                            </div>
+                            <div class="col-sm-3"><strong>Telephone</strong><br>
+                                708-829-0631<br>
+                                <br>
+                            </div>
+                            <div class="col-sm-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="{% url 'contact' %}" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    {% csrf_token %}
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-name">Your Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="name" value="" id="input-name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-email">E-Mail Address</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="email" value="" id="input-email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-enquiry">Enquiry</label>
+                            <div class="col-sm-10">
+                                <textarea name="enquiry" rows="10" id="input-enquiry" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <div class="buttons">
+                        <div class="pull-right">
+                            <input class="btn btn-primary" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <p>
+        Tel: 708-829-0631
+        <br>
+        Email: toe@lmtoe.com
+        <br>
+    </p>
+    <br>
+    For inquiries, Please fill out and submit the form below:
+    <br><br>
+    <div style="border: 5px solid cadetblue;" class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                {% include 'form_include.html' with form=form %}
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success btn-sm float-left" id="btnLogin">Submit</button>
+            </div>
+        </form>
+        <br>
+    </div>
+{% endblock %}
+
+{%  block footer %}
+{%  include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+
+    {% if next %}
+        {% if user.is_authenticated %}
+            <p>Your account doesn't have access to this page. To proceed,
+                please login with an account that has access.</p>
+        {% else %}
+            <p>Please login to see this page.</p>
+        {% endif %}
+    {% endif %}
+    <div style="border: 5px solid cadetblue;" class="card-body">
+        <form method="post" action=".">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.as_p }}
+            </div>
+            <div>
+                <input type="submit" class="btn btn-success btn-sm float-left" id="btnLogin"
+                       value="{% trans 'Log in' %}"/>
+                <input type="hidden" name="next" value="{{ next }}"/>
+            </div>
+        </form>
+    <br>
+    </div>
+    <br>
+    <p>{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!</p>
+    <p>{% trans "Not a member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!</p>
+{% endblock %}
+
+{%  block footer %}
+{%  include "footer.html" %}
+{% endblock %}

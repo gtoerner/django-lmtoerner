@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <div style="border: 5px solid cadetblue;" class="card-body">
+<form method="post" action=".">
+  {% csrf_token %}
+    <div class="form-group">
+  {{ form.as_p }}
+    </div>
+<div>
+  <input type="submit" class="btn btn-success btn-sm float-left" id="btnLogin" value="{% trans 'Submit' %}" />
+    </div>
+</form>
+<br>
+    </div>
+{% endblock %}
+
+{%  block footer %}
+{%  include "footer.html" %}
+{% endblock %}

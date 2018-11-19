@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% block title %}Contact - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+    <br>
+    <p>
+        Tel: 708-829-0631
+        <br>
+        Email: toe@lmtoe.com
+        <br>
+    </p>
+    <br>
+For inquiries, Please fill out and submit the form below:
+    <br><br>
+    <div style="border: 5px solid cadetblue;" class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                {% include 'form_include.html' with form=form %}
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success btn-sm float-left" id="btnLogin">Submit</button>
+            </div>
+        </form>
+        <br>
+    </div>
+{% endblock %}
