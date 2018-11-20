@@ -1,0 +1,72 @@
+{% extends "TeamSports/product_base.html" %}
+
+{% load static %}
+{% load i18n %}
+
+{% block productName %}
+    TestProduct
+{% endblock %}
+
+<!-- Image 1 is underneath in column 1 - use if there are 3 products
+otherwise start with product 2 -->
+{% block productImage1 %}
+    <img src="{% static 'image/catalog/hockey-shell.jpg' %}"
+         style="width:175px;height:225px;"
+         alt="Hockey Shell" title="Hockey Shell" class="img-responsive">
+{% endblock %}
+
+{% block productName1 %}
+    jersey Product1
+{% endblock %}
+
+{% block productDetails1 %}
+    <li>Durable 420 denier coated nylon</li>
+    <li>Adjustable belt closure</li>
+    <li>Braid Accents on side panels</li>
+    <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+{% endblock %}
+
+{% block productPrice1 %}
+    Price: $35.00 - $50.00
+{% endblock %}
+
+
+
+{% block productImage2 %}
+    <img src="{% static 'image/catalog/hockey-socks.png' %}"
+         style="width:175px;height:225px;"
+         alt="Hockey Socks" title="Hockey Socks" class="img-responsive">
+{% endblock %}
+
+{% block productName2 %}
+    product 2
+{% endblock %}
+
+{% block productDetails2 %}
+    <li>Braid Accents on side panels</li>
+    <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+{% endblock %}
+
+{% block productPrice2 %}
+    Price: $156.00 - $506.00
+{% endblock %}
+
+
+
+{% block productImage3 %}
+    <img src="{% static 'image/catalog/hockey-socks.png' %}"
+         style="width:175px;height:225px;"
+         alt="Hockey Socks" title="Hockey Socks" class="img-responsive">
+{% endblock %}
+
+{% block productName3 %}
+    product3
+{% endblock %}
+
+{% block productDetails3 %}
+    <li>detail of product 3</li>
+{% endblock %}
+
+{% block productPrice3 %}
+    Price: $16.00 - $56.00
+{% endblock %}

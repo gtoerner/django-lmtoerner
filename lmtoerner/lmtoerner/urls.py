@@ -24,11 +24,13 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^about', views.about, name='about'),
+    url(r'^testering', views.testering, name='testering'),
     url(r'^baseball', views.baseball, name='baseball'),
     url(r'^basketball', views.basketball, name='basketball'),
     url(r'^cycling', views.cycling, name='cycling'),
     url(r'^football', views.football, name='football'),
     url(r'^hockey', views.hockey, name='hockey'),
+    url(r'^rugby', views.rugby, name='rugby'),
     url(r'^delivery', views.delivery, name='delivery'),
     url(r'^pricing', views.pricing, name='pricing'),
     url(r'^privacy', views.privacy, name='privacy'),

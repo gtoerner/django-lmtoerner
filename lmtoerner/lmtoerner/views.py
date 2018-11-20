@@ -18,6 +18,12 @@ def basketball(request):
 def cycling(request):
     return render(request, 'TeamSports/cycling.html')
 
+def testering(request):
+    return render(request, 'TeamSports/testering.html')
+
+def rugby(request):
+    return render(request, 'TeamSports/rugby.html')
+
 def football(request):
     return render(request, 'TeamSports/football.html')
 

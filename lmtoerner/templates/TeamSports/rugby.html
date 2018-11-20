@@ -1,0 +1,67 @@
+{% extends "TeamSports/product_base.html" %}
+
+{% load static %}
+{% load i18n %}
+
+{% block productName %}
+    Rugby
+{% endblock %}
+
+<!-- Image 1 is underneath in column 1 - use if there are 3 products
+otherwise start with product 2 -->
+{% block productImage1 %}
+{% endblock %}
+
+{% block productName1 %}
+{% endblock %}
+
+{% block productDetails1 %}
+{% endblock %}
+
+{% block productPrice1 %}
+{% endblock %}
+
+
+
+{% block productImage2 %}
+    <img src="{% static 'image/catalog/rugby1.jpg' %}"
+         style="width:175px;height:225px;"
+         alt="Rugby Jersey" title="Rugby Jersey" class="img-responsive">
+{% endblock %}
+
+{% block productName2 %}
+    Rugby Jersey
+{% endblock %}
+
+{% block productDetails2 %}
+    <li>220gsm-300gsm polyester fabric</li>
+    <li>Double Stitched for extra strength</li>
+    <li>Resistant to pull and drag</li>
+    <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+{% endblock %}
+
+{% block productPrice2 %}
+    Price: $45 - $60.00
+{% endblock %}
+
+
+
+{% block productImage3 %}
+    <img src="{% static 'image/catalog/1rshort1.jpg' %}"
+         style="width:175px;height:225px;"
+         alt="Rugby Shorts" title="Rugby Shorts" class="img-responsive">
+{% endblock %}
+
+{% block productName3 %}
+    Rugby Shorts
+{% endblock %}
+
+{% block productDetails3 %}
+    <li>Double Stitched for extra strength</li>
+    <li>Resistant to pull and drag</li>
+    <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>>
+{% endblock %}
+
+{% block productPrice3 %}
+    Price: $20.00 - $35.00
+{% endblock %}
