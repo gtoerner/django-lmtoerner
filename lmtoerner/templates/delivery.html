@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    L.M.Toerner - Delivery
+{% endblock %}
+
+{% block content %}
+    <h1>Delivery</h1>
+    <br/>
+    <p>
+        If we are shipping to the Chicagoland area, we will make every effort to hand deliver the goods.  Otherwise we typically ship via UPS
+    </p>
+    <p>
+    <a href="{% url 'contact' %}" title="Contact us"><i class="fa fa-phone"></i>
+                    <span class="hidden-xs hidden-sm hidden-md">Contact us </span></a> for questions or if you are ready to place an order
+    </p>
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}

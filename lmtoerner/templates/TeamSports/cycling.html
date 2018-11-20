@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    L.M.Toerner - Cycling
+{% endblock %}
+
+{% block content %}
+    <h1>Cycling</h1>
+    <br>
+
+    <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-6 col-auto">
+            <strong>
+            <ul>
+                <li>220gsm-300gsm polyester fabric or custom fabrics</li>
+                <li>Fast-drying Cool DRI technology for comfort</li>
+                <li>Machine Washable</li>
+
+                <li>Fully customizable - any design, color, style, pattern, and any size</li>
+                <li>Add logo, name, numbers, etc</li>
+                <li>Prices will vary depending on material, order size and customization</li>
+
+            </ul>
+
+            <br>
+            <p>
+                <a href="{% url 'contact' %}" title="Contact us"><i class="fa fa-phone"></i>
+                    <span class="hidden-xs hidden-sm hidden-md">Contact us </span></a>
+                        for questions or if you are ready to place an order
+            </p>
+                </strong>
+        </div>
+
+        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="product-thumb">
+                <div class="image">
+                    <img src="{% static 'image/catalog/bikeclothes.jpg' %}" style="width:225px;height:225px;"
+                         alt="Cycling Outfits" title="Cycling Outfits" class="img-responsive">
+                </div>
+                <div>
+
+                    <div class="caption">
+                        <h4>Cycling Outfits</h4>
+                        <p>
+                        <ul>
+                            <li>90% Polyester + 10Spandex for Front & Side : 135G/M2</li>
+                            <li>80% polyester+20% spandex for Back & Sleeves : 150G/M2</li>
+                            <li>Breathable and stretchy. Perfect for cycling to give a great fit</li>
+                            <li>Anti-skidding gripper on jersey bottom</li>
+                            <li> Three back pockets hold extra gear and zipped</li>
+                            <li>
+                                Many options to choose from:
+                                 <ul>
+                                     <li>tops</li>
+                                     <li>bottoms</li>
+                                     <li>1-piece suit</li>
+                                     <li>fully customizable - any size, shape or style</li>
+                                 </ul>
+                            </li>
+                            <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+                        </ul>
+                        </p>
+                        <p class="price">Price: $25.00 - $45.00</p>
+                        <ul>
+                            * Prices will vary depending on material, order size and customization
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="button-group">
+                        <button type="button" onclick="cart.add('62', '20');"><i class="fa fa-shopping-cart"></i> <span
+                                class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('62');"
+                                data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="compare.add('62');"
+                                data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+                    </div>
+                    -->
+                </div>
+
+            </div>
+
+            <!-- start 2nd product-->
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <br>
+    <!--
+    <div class="row">
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+        -->
+
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}

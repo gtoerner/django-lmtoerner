@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    L.M.Toerner - Hockey
+{% endblock %}
+
+{% block content %}
+    <h1>Hockey Uniform</h1>
+    <br>
+
+    <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-6 col-auto">
+            <strong>
+                <ul>
+                    <li>220gsm-300gsm polyester fabric or custom fabrics</li>
+                    <li>Fast-drying Cool DRI technology for comfort</li>
+                    <li>Machine Washable</li>
+
+                    <li>Fully customizable - any design, color, style, pattern, and any size</li>
+                    <li>Add logo, name, numbers, etc</li>
+                    <li>Prices will vary depending on material, order size and customization</li>
+
+                </ul>
+
+                <br>
+                <p>
+                    <a href="{% url 'contact' %}" title="Contact us"><i class="fa fa-phone"></i>
+                        <span class="hidden-xs hidden-sm hidden-md">Contact us </span></a>
+                    for questions or if you are ready to place an order
+                </p>
+            </strong>
+
+            <br>
+
+
+            <div class="product-thumb">
+                <div class="image">
+                    <img src="{% static 'image/catalog/hockey-socks.png' %}"
+                         style="width:175px;height:225px;"
+                         alt="Hockey Socks" title="Hockey Socks" class="img-responsive">
+                </div>
+                <div>
+
+                    <div class="caption">
+                        <h4>Hockey Pactice Jersey</h4>
+                        <p>
+                        <ul>
+                            <li>Print options: Sublimated / Embroidery</li>
+
+                        </ul>
+                        </p>
+                        <p class="price">Price: $18.00 - $35.00</p>
+                        <ul>
+                            * Prices will vary depending on material, order size and customization
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="button-group">
+                        <button type="button" onclick="cart.add('62', '20');"><i class="fa fa-shopping-cart"></i> <span
+                                class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('62');"
+                                data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="compare.add('62');"
+                                data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+                    </div>
+                    -->
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="product-thumb">
+                <div class="image">
+                    <img src="{% static 'image/catalog/hockey1.jpg' %}"
+                         style="width:225px;height:225px;"
+                         alt="Hockey Jersey" title="Hockey Jersey" class="img-responsive">
+                </div>
+                <div>
+
+                    <div class="caption">
+                        <h4>Hockey Jersey</h4>
+                        <p>
+                        <ul>
+                            <li>Authentic jersey neck lace</li>
+                            <li>Built-in gussets for added mobility</li>
+                            <li>Double layers at shoulders and elbows</li>
+                            <li>Double needle stitching on critical seams</li>
+                            <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+                        </ul>
+                        </p>
+                        <p class="price">Price: $55.00 - $75.00</p>
+                        <ul>
+                            * Prices will vary depending on material, order size and customization
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="button-group">
+                        <button type="button" onclick="cart.add('62', '20');"><i class="fa fa-shopping-cart"></i> <span
+                                class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('62');"
+                                data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="compare.add('62');"
+                                data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+                    </div>
+                    -->
+                </div>
+
+            </div>
+
+            <!-- start 2nd product-->
+            <div class="product-thumb">
+                <div class="image">
+                    <img src="{% static 'image/catalog/hockey-shell.jpg' %}"
+                         style="width:175px;height:225px;"
+                         alt="Hockey Shell" title="Hockey Shell" class="img-responsive">
+                </div>
+                <div>
+
+                    <div class="caption">
+                        <h4>Hockey Shorts</h4>
+                        <p>
+                        <ul>
+
+                            <li>Durable 420 denier coated nylon</li>
+                            <li>Adjustable belt closure</li>
+                            <li>Braid Accents on side panels</li>
+                            <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+
+                        </ul>
+                        </p>
+                        <p class="price">Price: $35.00 - $50.00</p>
+                        <ul>
+                            * Prices will vary depending on material, order size and customization
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="button-group">
+                        <button type="button" onclick="cart.add('62', '20');"><i class="fa fa-shopping-cart"></i> <span
+                                class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('62');"
+                                data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="compare.add('62');"
+                                data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+                    </div>
+                    -->
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <br>
+    <!--
+    <div class="row">
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+        -->
+
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    L.M.Toerner - Basketball
+{% endblock %}
+
+{% block content %}
+    <h1>Basketball Uniform</h1>
+    <br>
+
+    <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-6 col-auto">
+            <strong>
+                <ul>
+                    <li>220gsm-300gsm polyester fabric or custom fabrics</li>
+                    <li>Fast-drying Cool DRI technology for comfort</li>
+                    <li>Machine Washable</li>
+
+                    <li>Fully customizable - any design, color, style, pattern, and any size</li>
+                    <li>Add logo, name, numbers, etc</li>
+                    <li>Prices will vary depending on material, order size and customization</li>
+
+                </ul>
+
+                <br>
+                <p>
+                    <a href="{% url 'contact' %}" title="Contact us"><i class="fa fa-phone"></i>
+                        <span class="hidden-xs hidden-sm hidden-md">Contact us </span></a>
+                    for questions or if you are ready to place an order
+                </p>
+            </strong>
+
+            <br>
+
+
+            <div class="product-thumb">
+                <div class="image">
+                    <img src="{% static 'image/catalog/basketball-reversable.png' %}"
+                         style="width:225px;height:225px;"
+                         alt="Basketball Pactice Jersey" title="Basketball Pactice Jersey" class="img-responsive">
+                </div>
+                <div>
+
+                    <div class="caption">
+                        <h4>Basketball Pactice Jersey</h4>
+                        <p>
+                        <ul>
+                            <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+                            <li>Reversable</li>
+                            <li>Colors: Red, Black.White, Blue, Pink, Orange and Purple</li>
+                        </ul>
+                        </p>
+                        <p class="price">Price: $18.00 - $35.00</p>
+                        <ul>
+                            * Prices will vary depending on material, order size and customization
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="button-group">
+                        <button type="button" onclick="cart.add('62', '20');"><i class="fa fa-shopping-cart"></i> <span
+                                class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('62');"
+                                data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="compare.add('62');"
+                                data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+                    </div>
+                    -->
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="product-thumb">
+                <div class="image">
+                    <img src="{% static 'image/catalog/basketball-jersey-uniform.jpg' %}"
+                         style="width:225px;height:225px;"
+                         alt="Basketball Jersey" title="Basketball Shirt" class="img-responsive">
+                </div>
+                <div>
+
+                    <div class="caption">
+                        <h4>Basketball Jersey</h4>
+                        <p>
+                        <ul>
+
+                            <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+                        </ul>
+                        </p>
+                        <p class="price">Price: $20.00 - $35.00</p>
+                        <ul>
+                            * Prices will vary depending on material, order size and customization
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="button-group">
+                        <button type="button" onclick="cart.add('62', '20');"><i class="fa fa-shopping-cart"></i> <span
+                                class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('62');"
+                                data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="compare.add('62');"
+                                data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+                    </div>
+                    -->
+                </div>
+
+            </div>
+
+            <!-- start 2nd product-->
+            <div class="product-thumb">
+                <div class="image">
+                    <img src="{% static 'image/catalog/basketball-shorts-with-pockets.png' %}"
+                         style="width:225px;height:225px;"
+                         alt="Basketball Shorts" title="Basketball Shorts" class="img-responsive">
+                </div>
+                <div>
+
+                    <div class="caption">
+                        <h4>Basketball Shorts</h4>
+                        <p>
+                        <ul>
+                            <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+                            <li>Elastic waistband provides a comfortable fit</li>
+                            <li>Draw String closure</li>
+                        </ul>
+                        </p>
+                        <p class="price">Price: $18.00 - $35.00</p>
+                        <ul>
+                            * Prices will vary depending on material, order size and customization
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="button-group">
+                        <button type="button" onclick="cart.add('62', '20');"><i class="fa fa-shopping-cart"></i> <span
+                                class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('62');"
+                                data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+                        <button type="button" data-toggle="tooltip" title="" onclick="compare.add('62');"
+                                data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+                    </div>
+                    -->
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <br>
+    <!--
+    <div class="row">
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+        -->
+
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}

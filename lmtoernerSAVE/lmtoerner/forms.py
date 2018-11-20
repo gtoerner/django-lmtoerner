@@ -10,7 +10,7 @@ class ContactForm(forms.Form):
     # the new bit we're adding
     def __init__(self, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
-        self.fields['contact_name'].label = "Name"
-        self.fields['contact_email'].label = "Email"
+        self.fields['contact_name'].label = "Your Name"
+        self.fields['contact_email'].label = "Email Address"
         self.fields['contact_subject'].label = "Subject"
-        self.fields['contact_message'].label = "Message"
+        self.fields['contact_message'].label = "Enquiry"
