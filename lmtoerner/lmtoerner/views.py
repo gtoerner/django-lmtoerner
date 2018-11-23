@@ -24,6 +24,12 @@ def testering(request):
 def rugby(request):
     return render(request, 'TeamSports/rugby.html')
 
+def soccer(request):
+    return render(request, 'TeamSports/soccer.html')
+
+def softball(request):
+    return render(request, 'TeamSports/softball.html')
+
 def football(request):
     return render(request, 'TeamSports/football.html')
 

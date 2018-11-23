@@ -26,6 +26,9 @@
     <script src="{% static "jquery/swiper/js/swiper.jquery.js" %}" type="text/javascript"></script>
     <script src="{% static "common.js" %}" type="text/javascript"></script>
     <link href="{% static "image/catalog/cart.png" %}" rel="icon">
+
+{% block style %}
+{% endblock %}
 </head>
 
 <body>
@@ -164,8 +167,8 @@
                                 <li><a href="{%  url 'football' %}">Football</a></li>
                                 <li><a href="{%  url 'hockey' %}">Hockey</a></li>
                                 <li><a href="{% url 'rugby' %}">Rugby</a></li>
-                                <li><a href="#">Soccer (1)</a></li>
-                                <li><a href="#">Softball (1)</a></li>
+                                <li><a href="{% url 'soccer' %}">Soccer</a></li>
+                                <li><a href="{% url 'softball' %}">Softball</a></li>
                             </ul>
                         </div>
                         <a href="{% url 'products' %}" class="see-all">Show All Products</a>

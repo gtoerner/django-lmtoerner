@@ -4,43 +4,48 @@
 {% load i18n %}
 
 {% block title %}
-    L.M.Toerner - Rugby
+    L.M.Toerner - Soccer
 {% endblock %}
 
 {% block productName %}
-    Rugby
+    Soccer Uniform
 {% endblock %}
 
 <!-- Image 1 is underneath in column 1 - use if there are 3 products
 otherwise start with product 2 -->
 {% block productImage1 %}
+    <img src="{% static 'image/catalog/soccershorts1.jpg' %}"
+         style="width:175px;height:225px;"
+         alt="Soccer Shorts" title="Soccer Shorts" class="img-responsive">
 {% endblock %}
 
 {% block productName1 %}
+    Soccer Shorts
 {% endblock %}
 
 {% block productDetails1 %}
+    <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
 {% endblock %}
 
 {% block productPrice1 %}
+    Price: $18 - $30
+    <p>* Prices will vary depending on material, order size and customization</p>
 {% endblock %}
 
 
 
 {% block productImage2 %}
-    <img src="{% static 'image/catalog/rugby1.jpg' %}"
-         style="width:175px;height:225px;"
-         alt="Rugby Jersey" title="Rugby Jersey" class="img-responsive">
+    <img src="{% static 'image/catalog/soccerjersey.jpg' %}"
+         style="width:175px;height:250px;"
+         alt="Soccer Jersey" title="Soccer Jersey" class="img-responsive">
 {% endblock %}
 
 {% block productName2 %}
-    Rugby Jersey
+    Soccer Jersey
 {% endblock %}
 
 {% block productDetails2 %}
     <li>220gsm-300gsm polyester fabric</li>
-    <li>Double Stitched for extra strength</li>
-    <li>Resistant to pull and drag</li>
     <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
 {% endblock %}
 
@@ -52,23 +57,23 @@ otherwise start with product 2 -->
 
 
 {% block productImage3 %}
-    <img src="{% static 'image/catalog/1rshort1.jpg' %}"
+    <img src="{% static 'image/catalog/soccer-socks.png' %}"
          style="width:175px;height:225px;"
-         alt="Rugby Shorts" title="Rugby Shorts" class="img-responsive">
+         alt="Soccer Socks" title="Soccer Socks" class="img-responsive">
 {% endblock %}
 
 {% block productName3 %}
-    Rugby Shorts
+    Soccer Socks
 {% endblock %}
 
 {% block productDetails3 %}
-    <li>Double Stitched for extra strength</li>
-    <li>Resistant to pull and drag</li>
-    <li>Print options: Sublimated / Embroidery / Silk Printing / Tackle Twill</li>
+    <li>Spandex / Nylon / Cotton</li>
+    <li>Compression </li>
+
 {% endblock %}
 
 {% block productPrice3 %}
-    Price: $20.00 - $35.00
+    Price: $10.00 - $15.00
     <p>* Prices will vary depending on material, order size and customization</p>
 
 {% endblock %}
