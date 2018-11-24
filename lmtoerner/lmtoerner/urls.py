@@ -40,7 +40,7 @@ urlpatterns = [
     url(r'^terms', views.terms, name='terms'),
     url(r'^size-chart', views.sizechart, name='size-chart'),
     url(r'^contact', views.contact, name='contact'),
-    url(r'^contact_success', views.contact_success, name='contact_success'),
+    url(r'^contct_success', views.contct_success, name='contct_success'),
     #url(r'', include('shop.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('registration.backends.default.urls')),

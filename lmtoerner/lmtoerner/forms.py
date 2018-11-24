@@ -4,7 +4,7 @@ from django import forms
 class ContactForm(forms.Form):
     contact_name = forms.CharField(max_length=200, required=True)
     contact_email = forms.EmailField(required=True)
-    contact_subject = forms.CharField(required=True)
+    #contact_subject = forms.CharField(required=True)
     contact_message = forms.CharField(required=True, widget=forms.Textarea)
 
     # the new bit we're adding
@@ -12,5 +12,5 @@ class ContactForm(forms.Form):
         super(ContactForm, self).__init__(*args, **kwargs)
         self.fields['contact_name'].label = "Your Name"
         self.fields['contact_email'].label = "Email Address"
-        self.fields['contact_subject'].label = "Subject"
+        #self.fields['contact_subject'].label = "Subject"
         self.fields['contact_message'].label = "Enquiry"
